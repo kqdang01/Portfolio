@@ -1,0 +1,75 @@
+body{
+    font-size: 12px;
+    background-color: #0d1321;
+}
+
+span{
+    color: #2BD6B4;
+}
+
+nav{
+    margin: 2px auto 0;
+    position: sticky;
+    width: 580px;
+    height: 30px;
+    background-color: #0d1321;
+    border: 1px solid;
+    border-color: rgb(69, 69, 69);
+    border-radius: 8px;
+    font-size: 0;
+}
+
+nav a{
+    font-family: NTR;
+    line-height: 30px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: sticky;
+    z-index: 1;
+    text-decoration: none;
+justify-content: space-evenly;
+    text-align: center;
+    color: #ccd6f6;
+    cursor: pointer;
+}
+
+nav .animation{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(n){
+    width: 145px;
+}
+
+a:hover{
+    color: #0d1321;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation{
+    width: 145px;
+    left: 0;
+    text-emphasis-color: #0d1321;
+    background-color: #5ad2f4;
+}
+nav .start-about, a:nth-child(2):hover~.animation{
+    width: 145px;
+    left: 145px;
+    background-color: #5ad2f4;
+}
+nav .start-experience, a:nth-child(3):hover~.animation{
+    width: 145px;
+    left: 290px;
+    background-color: #5ad2f4;
+}
+nav .start-projects, a:nth-child(4):hover~.animation{
+    width: 145px;
+    left: 435px;
+    background-color: #5ad2f4;
+}
+
